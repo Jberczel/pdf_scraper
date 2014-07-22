@@ -9,8 +9,8 @@ BASE_URL = "http://psroc.phys.ntu.edu.tw/cjp/"
 # get links to issues on homepage
 issues = Nokogiri::HTML(open(HOME_URL)).css('#main_container a')
 
-# get first 3 links(issues)
-issues[0..2].each do |issue| 
+# get first 2 links(issues)
+issues[0..1].each do |issue| 
 
     # url to specific issue
     page_url = HOME_URL + issue['href'] 
